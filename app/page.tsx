@@ -4,17 +4,14 @@ import SolidityEditor from "@/components/sol-editor";
 export default function Home() {
   return (
     <div className="w-full flex justify-center items-center min-h-screen p-24">
-      <div className="w-full max-w-6xl text-xl">
-        <CodeEditor
-          content={solidityCode}
-          id="11"
-          language="solidity"
-          snipperAuthorId="dddd"
-          textSize="sm"
-          title="Solidity testing"
-        />
-        {/* <SolidityEditor /> */}
-      </div>
+      <CodeEditor
+        content={solidityCode}
+        id="11"
+        language="solidity"
+        snipperAuthorId="dddd"
+        textSize="18px"
+        title="Solidity testing"
+      />
     </div>
   );
 }

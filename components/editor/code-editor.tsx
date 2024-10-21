@@ -73,7 +73,7 @@ const CodeEditor: FC<CodeEditorProps> = ({
 
   return (
     <>
-      <div className="flex flex-col w-[250px] md:w-full">
+      <div className="flex flex-col w-[250px] md:w-full max-w-3xl">
         <CodeTitleBar
           title={title}
           content={content}
@@ -84,7 +84,7 @@ const CodeEditor: FC<CodeEditorProps> = ({
 
         <ReactCodeMirror
           className={cn(
-            "w-auto min-w-[250px] max-w-[5xl] max-h-[100%] overflow-y-auto"
+            "w-auto min-w-[250px] max-w-[5xl] max-h-[500px] overflow-y-auto"
           )}
           style={{
             fontSize: `${textSize}`,
